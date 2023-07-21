@@ -70,7 +70,7 @@ twitterBtn.addEventListener("click", tweetQuote);
 whatsappBtn.addEventListener("click", () => {
   const encodedText = encodeURIComponent(quoteText.innerHTML),
     encodedAuthor = encodeURIComponent(authorText.innerHTML),
-    whatsAppUrl = `whatsapp://send?text=${encodedText}\n-${encodedAuthor}`;
+    whatsAppUrl = `whatsapp://send?text=${encodedText} -${encodedAuthor}`;
 
   location.href = whatsAppUrl;
 });
