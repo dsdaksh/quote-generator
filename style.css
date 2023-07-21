@@ -13,6 +13,19 @@ body {
   justify-content: center;
 }
 
+.quote-category {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+}
+
+.new-quote {
+  margin-top: 15px;
+}
+
 .quote-container {
   width: auto;
   max-width: 900px;

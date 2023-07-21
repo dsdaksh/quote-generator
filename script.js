@@ -4,6 +4,7 @@ const authorText = document.getElementById("author");
 const whatsappBtn = document.getElementById("whatsapp");
 const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
+const category = document.getElementById("category");
 const loader = document.getElementById("loader");
 
 let apiQuotes = [];
@@ -26,6 +27,7 @@ function newQuote() {
   //  Pick a random quote from apiQuotes
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
   authorText.textContent = quote.author;
+  category.textContent = `# ${quote.tag}`;
   //   Check Quote length to determine styling
   if (quote.text.length > 120) {
     quoteText.classList.add("long-quote");
