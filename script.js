@@ -26,7 +26,7 @@ function newQuote() {
   loading();
   //  Pick a random quote from apiQuotes
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
-  authorText.textContent = quote.author;
+  authorText.textContent = `- ${quote.author}`;
   category.textContent = `# ${quote.tag}`;
   //   Check Quote length to determine styling
   if (quote.text.length > 120) {
